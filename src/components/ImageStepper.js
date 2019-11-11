@@ -38,7 +38,7 @@ const useStyles = makeStyles(theme => ({
 
 function ImageStepper(props) {
   const classes = useStyles();
-  const { items, autoStep, stepInterval } = props;
+  const { title, items, autoStep, stepInterval } = props;
 
   const View = autoStep ? autoPlay(SwipeableViews) : SwipeableViews;
 
@@ -51,9 +51,12 @@ function ImageStepper(props) {
   return (
     <div className={classes.root}>
       <Card elevation={0}> 
-        <div className={classes.header}>
-          <Typography>{items[activeStep].label}</Typography>
-        </div>
+        { title
+          ? (
+            <div className={classes.header}>
+              <Typography>{title}</Typography>
+            </div>
+          ) : null }
         <View
           axis={'x'}
           index={activeStep}
@@ -64,7 +67,7 @@ function ImageStepper(props) {
           {items.map((item, index) => (
             <div key={item.imgPath}>
               {Math.abs(activeStep - index) <= 2 ? (
-                <img className={classes.img} src={item.imgPath} alt={item.label} />
+                <img className={classes.img} src={item.img} alt={item.label} />
               ) : null}
             </div>
           ))}
@@ -92,6 +95,7 @@ function ImageStepper(props) {
 }
 
 ImageStepper.propTypes = {
+  title: PropTypes.string,
   items: PropTypes.arrayOf(PropTypes.shape({
     imgPath: PropTypes.string.isRequired,
     label: PropTypes.string.isRequired,
@@ -101,6 +105,7 @@ ImageStepper.propTypes = {
 }
 
 ImageStepper.propTypes = {
+  title: '',
   autoStep: false,
   stepInterval: 3000,
 }
