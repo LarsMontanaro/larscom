@@ -31,8 +31,23 @@ const useStyles = makeStyles(theme => ({
     width: '100%',
   },
   stepper: {
+    position: 'relative',
+    backgroundColor: 'rgba(0,0,0,0)',
+    zIndex: 1,
+    top: -32,
     height: 20,
-    padding: 8,
+    padding: 6,
+    '& button': {
+      color: 'rgba(255, 255, 255, 0.8)',
+    },
+    '& > .MuiMobileStepper-dots': {
+      '& > .MuiMobileStepper-dot': {
+        backgroundColor: 'rgba(255, 255, 255, 0.8)',
+      },
+      '& > .MuiMobileStepper-dotActive': {
+        backgroundColor: '#3f51b5',
+      },
+    },
   },
 }));
 
