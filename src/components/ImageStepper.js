@@ -45,13 +45,13 @@ const useStyles = makeStyles(theme => ({
         backgroundColor: 'rgba(255, 255, 255, 0.8)',
       },
       '& > .MuiMobileStepper-dotActive': {
-        backgroundColor: '#3f51b5',
+        backgroundColor: 'rgb(63, 81, 181)',
       },
     },
   },
 }));
 
-function ImageStepper(props) {
+const ImageStepper = (props) => {
   const classes = useStyles();
   const { title, items, autoStep, stepInterval } = props;
 
@@ -80,16 +80,15 @@ function ImageStepper(props) {
           enableMouseEvents
         >
           {items.map((item, index) => (
-            <div key={item.imgPath}>
+            <div key={item.img}>
               {Math.abs(activeStep - index) <= 2 ? (
-                <img className={classes.img} src={item.img} alt={item.label} />
+                <img className={classes.img} src={item.img} key={item.img} alt={item.label} />
               ) : null}
             </div>
           ))}
         </View>
         <MobileStepper
           className={classes.stepper}
-          position="block"
           variant="dots"
           activeStep={activeStep}
           steps={maxSteps}
@@ -112,14 +111,14 @@ function ImageStepper(props) {
 ImageStepper.propTypes = {
   title: PropTypes.string,
   items: PropTypes.arrayOf(PropTypes.shape({
-    imgPath: PropTypes.string.isRequired,
-    label: PropTypes.string.isRequired,
+    img: PropTypes.any.isRequired,
+    label: PropTypes.string,
   })).isRequired,
   autoStep: PropTypes.bool,
   stepInterval: PropTypes.number,
 }
 
-ImageStepper.propTypes = {
+ImageStepper.defaultProps = {
   title: '',
   autoStep: false,
   stepInterval: 3000,
