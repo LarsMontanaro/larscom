@@ -32,9 +32,9 @@ const useStyles = makeStyles(theme => ({
     position: 'relative',
     backgroundColor: 'rgba(0,0,0,0)',
     zIndex: 1,
-    top: -32,
-    height: 20,
-    marginBottom: -20,
+    top: -42,
+    height: 30,
+    marginBottom: -30,
     padding: 6,
     '& button': {
       color: 'rgba(255, 255, 255, 0.8)',
