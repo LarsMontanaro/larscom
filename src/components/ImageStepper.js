@@ -24,9 +24,7 @@ const useStyles = makeStyles(theme => ({
     backgroundColor: theme.palette.background.default,
   },
   img: {
-    maxHeight: 318,
     display: 'block',
-    maxWidth: 500,
     overflow: 'hidden',
     width: '100%',
   },
@@ -36,6 +34,7 @@ const useStyles = makeStyles(theme => ({
     zIndex: 1,
     top: -32,
     height: 20,
+    marginBottom: -20,
     padding: 6,
     '& button': {
       color: 'rgba(255, 255, 255, 0.8)',

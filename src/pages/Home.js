@@ -2,7 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import IconButton from '@material-ui/core/IconButton';
-import Email from '@material-ui/icons/Email';
+import EmailIcon from '@material-ui/icons/Email';
 import ImageCard from '../components/ImageCard.js';
 import ImageStepper from '../components/ImageStepper.js';
 import { SocialIcon } from 'react-social-icons';
@@ -27,12 +27,12 @@ const useStyles = makeStyles(theme => ({
   pageContainer: {
     width: '80%',
   },
-  stepperTitleText: {
-    display: 'flex',
-    flexFlow: 'row wrap',
-    justifyContent: 'flex-start',
-    alignItems: 'center',
-    margin: 4,
+  about: {
+    maxWidth: '500px',
+    fontSize: '0.85rem',
+  },
+  news: {
+    fontSize: '0.85rem',
   },
   contactIconsContainer: {
     display: 'flex',
@@ -60,11 +60,35 @@ const Home = () => {
     <div className={classes.root}>
       <Grid container className={classes.pageContainer} spacing={2}>
         <Header />
-        <Grid container spacing={2}>
+        <Grid container spacing={4}>
           <Grid item xs={6}>
-            <Grid item>
+            <Grid item className={classes.about}>
               <h1>about</h1>
-              <span>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</span>
+              <p>Lars is a Brooklyn-based actor/comedian/theater-maker.</p>
+              <p>
+                He spent his teensy-sized years in Occidental, California
+                alongside a cast of lizards and scorpions and blackberry brambles.
+              </p>
+              <p>
+                A little bigger, he moved to the Bay Area and then onward
+                to a small town in the Sierra Nevadas. During this time he
+                performed in local theater, attended summer intensives with
+                the American Conservatory Theater and Berkeley Rep, and 
+                played with the Sacramento Comedysportz improv comedy team.
+              </p>
+              <p>
+                In New York City, Lars performed in a number of shows
+                at the Experimental Theatre Wing and Playwrights Horizons studios
+                of NYU Tisch. He hosts and performs improv comedy all over the city
+                and loves it. He is pretty skeptical of "the way things are"
+                and loves theater that puts cultural hegemony to task. 
+                He is exploring clowning and contact improv and that and this and these
+                and those and all sorts of ways to flex physical and creative muscles.
+              </p>
+              <p>
+                BA in Environmental Studies and Computer Sciences aka
+                Lars is a green robot boy.
+              </p>
             </Grid>
             <Grid item>
               <h1>headshot & resume</h1>
@@ -76,7 +100,7 @@ const Home = () => {
               <div className={classes.contactIconsContainer}>
                 <a href="mailto:larsmontanaro@gmail.com">
                   <IconButton>
-                    {<Email />}
+                    {<EmailIcon />}
                   </IconButton>
                 </a>
                 <SocialIcon target="_blank" url="https://www.instagram.com/larsmontanaro/" />
@@ -85,28 +109,102 @@ const Home = () => {
             </Grid>
           </Grid>
           <Grid item xs={6}>
-            <Grid item>
+            <Grid item className={classes.news}>
               <h1>news</h1>
-              <div className={classes.stepperTitleText}>
-                <h3>Animamundi</h3>
-                <span>&nbsp;-&nbsp;Ollie Mers</span>
+              <div>
+                <p>
+                  <b>+</b> An absolute blast has been had playing with the clowns at the&nbsp;
+                  <a href="https://www.facebook.com/NYC-Physical-Comedy-Lab-1398973467082552">
+                  NYC Physical Comedy Lab
+                  </a>
+                  &nbsp;each week! :-)
+                </p>
               </div>
-              <ImageStepper items={animaSteps}/>
-              <div className={classes.stepperTitleText}>
-                <h3>DCA</h3>
-                <span>&nbsp;-&nbsp;NYU Dancers & Choreographers Alliance</span>
+              <div>
+                <p>
+                  <b>+</b> Lars delves into text and physical impulse in David Prete's&nbsp;
+                  <a href="https://www.davidprete.com/the-plastiques-project">Plastiques Project</a>
+                  .
+                </p>
               </div>
-              <ImageStepper items={dcaSteps}/>
-              <div className={classes.stepperTitleText}>
-                <h3>A Room For Lost Things</h3>
-                <span>&nbsp;-&nbsp;Ana Schuler</span>
+              <div>
+                <p>
+                  <b>+</b> Lars has some serious fun at Avner Eisenberg's 'Eccentric
+                  Performance' clowning workshop at the&nbsp;
+                  <a href="https://celebrationbarn.com/">
+                  Celebration Barn Theater
+                  </a>
+                  &nbsp;!
+                </p>
               </div>
-              <ImageStepper items={roomSteps}/>
-              <div className={classes.stepperTitleText}>
-                <h3>Dogs Chase Shadows</h3>
-                <span>&nbsp;-&nbsp;Malena Pennycook</span>
+              <div>
+                <p>
+                  <b>+</b> the Theater of the Oppressed Facilitator Training at the&nbsp;
+                  <a href="http://www.mandalaforchange.com/">
+                  Mandala Center for Change
+                  </a>
+                  &nbsp;with Marc Weinblatt was an intense and illuminating experience.
+                </p>
               </div>
-              <ImageStepper items={dogsSteps}/>
+              <div>
+                <p>
+                  <b>+</b> a plastic-sheet sea, a cardboard-box rainforest, and a
+                  river of trash tranform the stage in Ollie Mers' <i>Animamundi</i>,
+                  at NYU's Experimental Theatre Wing. Lars devises and plays in a
+                  menagerie of vignettes that explore what it might be like to
+                  be non-human in a swiftly transforming environment.
+                </p>
+                <span><i>Animamundi</i></span>
+                <ImageStepper items={animaSteps} />
+              </div>
+              <div>
+                <p>
+                  <b>+</b> Lars is thrilled to be training under Erica Fae in a spring
+                  Grotowski workshop produced by&nbsp;
+                  <a href="http://www.synaesthetic-theatre.com/">Synaesthetic Theater</a>
+                  &nbsp;.
+                </p>
+              </div>
+              <div>
+                <p>
+                  <b>+</b> Lars appears in Eleanor Maples' production of <i>Peter and
+                  the Wolf</i>. Set to the score recorded by the Philadelphia Orchestra,
+                  this movement-focused children's tale came to the stage at
+                  NYU's Playwrights Horizons Studio.
+                </p>
+              </div>
+              <div>
+                <p>
+                  <b>+</b> Lars performs in his final showcase with the NYU Dancers
+                  & Choreographers Alliance. Will miss you, DCA.
+                </p>
+                <span><i>DCA</i></span>
+                <ImageStepper items={dcaSteps}/>
+              </div>
+              <div>
+                <p>
+                  <b>+</b> Lars performs his last show with the indubitable Nut Mix improv
+                  at the Holbrooke Hotel in his beloved hometown of Nevada City, CA.
+                </p>
+              </div>
+              <div>
+                <p>
+                  <b>+</b> Lars leads pattering puppet feet up and down a
+                  stairway in the clouds in Ana Schuler's <i>A Room For
+                  Lost Things</i> at NYU Experimental Theatre Wing.
+                </p>
+                <span><i>A Room For Lost Things</i></span>
+                <ImageStepper items={roomSteps} />
+              </div>
+              <div>
+                <p>
+                  <b>+</b>Lars is an actor, meta-actor, dancer, silhouettist,
+                  and tree (dream part!) in Malena Pennycooks's <i>Dogs Chase
+                  Shadows</i> at NYU's Experimental Theater Wing.
+                </p>
+                <span><i>Dogs Chase Shadows</i></span>
+                <ImageStepper items={dogsSteps} />
+              </div>
             </Grid>
           </Grid>
         </Grid>
