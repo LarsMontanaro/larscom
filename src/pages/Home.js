@@ -23,16 +23,17 @@ const useStyles = makeStyles(theme => ({
     '& h1, h2, h3, h4':  {
       margin: 0,
     },
+    '& p, span': {
+      fontSize: '0.85rem',
+    },
   },
   pageContainer: {
     width: '80%',
   },
-  about: {
-    maxWidth: '500px',
-    fontSize: '0.85rem',
-  },
-  news: {
-    fontSize: '0.85rem',
+  colsWrapper: {
+    '& > *': {
+      maxWidth: 700,
+    },
   },
   contactIconsContainer: {
     display: 'flex',
@@ -60,8 +61,8 @@ const Home = () => {
     <div className={classes.root}>
       <Grid container className={classes.pageContainer} spacing={2}>
         <Header />
-        <Grid container spacing={4}>
-          <Grid item xs={6}>
+        <Grid container spacing={4} className={classes.colsWrapper}>
+          <Grid item xs={12} md={6}>
             <Grid item className={classes.about}>
               <h1>about</h1>
               <p>Lars is a Brooklyn-based actor/comedian/theater-maker.</p>
@@ -108,7 +109,7 @@ const Home = () => {
               </div>
             </Grid>
           </Grid>
-          <Grid item xs={6}>
+          <Grid item xs={12} md={6}>
             <Grid item className={classes.news}>
               <h1>news</h1>
               <div>

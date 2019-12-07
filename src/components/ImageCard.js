@@ -10,8 +10,7 @@ const useStyles = makeStyles({
     flexGrow: 1,
   },
   img: {
-    maxHeight: 500,
-    flexShrink: 1,
+    maxHeight: 480,
   },
   download: {
     margin: 0,
