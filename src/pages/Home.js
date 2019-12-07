@@ -67,7 +67,7 @@ const Home = () => {
               <p>Lars is a Brooklyn-based actor/comedian/theater-maker.</p>
               <p>
                 He spent his teensy-sized years in Occidental, California
-                alongside a cast of lizards and scorpions and blackberry brambles.
+                alongside a cast of lizards, scorpions, and blackberry brambles.
               </p>
               <p>
                 A little bigger, he moved to the Bay Area and then onward
@@ -123,8 +123,7 @@ const Home = () => {
               <div>
                 <p>
                   <b>+</b> Lars delves into text and physical impulse in David Prete's&nbsp;
-                  <a href="https://www.davidprete.com/the-plastiques-project">Plastiques Project</a>
-                  .
+                  <a href="https://www.davidprete.com/the-plastiques-project">Plastiques Project</a>.
                 </p>
               </div>
               <div>
@@ -161,15 +160,13 @@ const Home = () => {
                 <p>
                   <b>+</b> Lars is thrilled to be training under Erica Fae in a spring
                   Grotowski workshop produced by&nbsp;
-                  <a href="http://www.synaesthetic-theatre.com/">Synaesthetic Theater</a>
-                  &nbsp;.
+                  <a href="http://www.synaesthetic-theatre.com/">Synaesthetic Theater</a>.
                 </p>
               </div>
               <div>
                 <p>
                   <b>+</b> Lars appears in Eleanor Maples' production of <i>Peter and
-                  the Wolf</i>. Set to the score recorded by the Philadelphia Orchestra,
-                  this movement-focused children's tale came to the stage at
+                  the Wolf</i>. This movement-focused children's tale went up at
                   NYU's Playwrights Horizons Studio.
                 </p>
               </div>
