@@ -10,7 +10,10 @@ const useStyles = makeStyles({
     flexGrow: 1,
   },
   img: {
-    maxHeight: 480,
+    maxWidth: 500,
+    '@media only screen and (max-width: 600px)': {
+      maxWidth: 400,
+    }
   },
   download: {
     margin: 0,

@@ -10,9 +10,9 @@ import animaImgs from '../img/anima';
 import dcaImgs from '../img/dca';
 import dogsImgs from '../img/dogs';
 import roomImgs from '../img/room';
-import headshotImg from '../img/headshot.jpg';
-import resumeImg from '../img/resume.jpg';
-import resume from '../img/resume.pdf';
+import headshotImg from '../img/headshot_LarsMontanaro.jpg';
+import resumeImg from '../img/resume_LarsMontanaro.jpg';
+import resume from '../img/resume_LarsMontanaro.pdf';
 
 import Header from './home/Header.js';
 
@@ -22,9 +22,6 @@ const useStyles = makeStyles(theme => ({
     justifyContent: 'center',
     '& h1, h2, h3, h4':  {
       margin: 0,
-    },
-    '& p, span': {
-      fontSize: '0.85rem',
     },
   },
   pageContainer: {
@@ -112,6 +109,13 @@ const Home = () => {
           <Grid item xs={12} md={6}>
             <Grid item className={classes.news}>
               <h1>news</h1>
+              <div>
+                <p>
+                  <b>+</b> Lars will be workshopping a new play with the&nbsp;
+                  <a href="https://www.hudsonshakespeare.com/">Hudson Shakespeare Company</a>
+                  ! details to come!
+                </p>
+              </div>
               <div>
                 <p>
                   <b>+</b> An absolute blast has been had playing with the clowns at the&nbsp;
