@@ -12,7 +12,7 @@ const useStyles = makeStyles({
   img: {
     maxWidth: 500,
     '@media only screen and (max-width: 600px)': {
-      maxWidth: 400,
+      maxWidth: 450,
     }
   },
   download: {
