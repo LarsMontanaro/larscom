@@ -111,6 +111,14 @@ const Home = () => {
               <h1>news</h1>
               <div>
                 <p>
+                  <b>+</b> Lars joins the&nbsp;
+                  <a href="http://exubs.com/">The Exuberants Improv Comedy Troupe</a>
+                  and will perform Sunday nighst at 6pm at&nbsp;
+                  <a href="https://www.broadwaycomedyclub.com/">Broadway Comedy Club!</a>
+                </p>
+              </div>
+              <div>
+                <p>
                   <b>+</b> Lars will be workshopping a new play with the&nbsp;
                   <a href="https://www.hudsonshakespeare.com/">Hudson Shakespeare Company</a>
                   ! details to come!
