@@ -90,10 +90,6 @@ const Home = () => {
                 He is exploring clowning and contact improv and that and this and these
                 and those and all sorts of ways to flex physical and creative muscles.
               </p>
-              <p>
-                BA in Environmental Studies and Computer Sciences aka
-                Lars is a green robot boy.
-              </p>
             </Grid>
             <Grid item>
               <h1>headshot & resume</h1>
@@ -123,7 +119,7 @@ const Home = () => {
                     Lars will be joining
                     &nbsp;<a href="https://www.marinshakespeare.org/">Marin Shakespeare Company</a>
                     &nbsp;as an acting apprentice for their fall season.
-                    <span style={{ fontStyle: "italic" }}> *deferred due to COVID =(</span>
+                    *deferred due to COVID =(
                   </p>
                 </div>
                 <div>
@@ -144,9 +140,9 @@ const Home = () => {
                 </div>
                 <div>
                   <p>
-                    <b>+</b> Lars will be workshopping a new play with the&nbsp;
+                    <b>+</b> Lars is workshopping a new play with the&nbsp;
                     <a href="https://www.hudsonshakespeare.com/">Hudson Shakespeare Company</a>
-                    ! details to come!
+                    ! The process was fantastic, but the showcase was canceled due to COVID =(
                   </p>
                 </div>
                 <div>

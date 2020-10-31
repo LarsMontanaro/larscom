@@ -27,9 +27,6 @@ const Header = () => {
         <img width="100%" src={backgroundImg} alt="" />
         <h1 className={classes.siteTitle}>Lars Montanaro</h1>
       </div>
-      {/* IMAGE */}
-      {/* TITLE */}
-      {/* Links */}
     </Grid>
   );
 }

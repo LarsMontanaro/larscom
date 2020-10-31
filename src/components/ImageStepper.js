@@ -30,7 +30,10 @@ const useStyles = makeStyles(theme => ({
   },
   stepper: {
     position: 'relative',
-    backgroundColor: 'rgba(0,0,0,0)',
+    backgroundColor: 'rgba(0, 0, 0, 0)',
+    '&:hover': {
+      backgroundColor: 'rgba(255, 255, 255, 0.2)',
+    },
     zIndex: 1,
     top: -42,
     height: 30,
