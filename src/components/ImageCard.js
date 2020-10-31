@@ -11,7 +11,7 @@ const useStyles = makeStyles({
     flexGrow: 1,
     maxWidth: 500,
     '@media only screen and (max-width: 600px)': {
-      maxWidth: 450,
+      maxWidth: 400,
     },
   },
   img: {
