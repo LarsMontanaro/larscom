@@ -70,7 +70,7 @@ const ImageCard = (props) => {
         ? (
             <div className={classes.downloadOverlay}>
               <div className={classes.downloadWrapper}>
-                <a className={classes.download} href={download.file} download={download.fileName}>
+                <a className={classes.download} href={download.file} download>
                   download me! <SaveAlt fontSize="small" />
                 </a>
               </div>
